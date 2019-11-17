@@ -11,7 +11,6 @@ public class P16
 			mul=mul.multiply(a);
 			c=c.subtract(BigInteger.ONE);
 		}
-		System.out.println(mul);
 		String s=mul.toString();
 		int sum=0;
 		for(int i=0; i<s.length(); i++)
