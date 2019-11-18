@@ -1,22 +1,22 @@
 public class P10
 {
-	public static long isPrime(long m)
+	public static boolean isPrime(int i)
 	{
-		for(long i=2; i<Math.sqrt(m); i++)
+		for(int j=2; j<=Math.sqrt(i); j++)
 		{
-			if(m%i==0)
-				return (-1);
+			if(i%j==0)
+				return false;	
 		}
-		return 1; 
-	}
+		return true;
+	} 
 	public static void main(String args[])
 	{
-		long p;
 		long sum=0;
-		for(int i=2; i<2000000; i++)
+		boolean p;
+		for(int i=1; i<2000000; i++)
 		{
 			p=isPrime(i);
-			if(p==1)
+			if(p)
 				sum=sum+i;
 		}
 		System.out.println(sum);
