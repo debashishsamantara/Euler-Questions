@@ -22,3 +22,4 @@ public class P10
 		System.out.println(sum);
 	}
 }
+//hello
